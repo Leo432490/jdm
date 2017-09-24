@@ -1,0 +1,70 @@
+/* reset css */
+
+body {
+    color: #333;
+    font: 14px 'Microsoft Yahei', sans-serif;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input,textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;  /*清除移动端组件的默认样式，例如input会有一些内阴影吧*/
+}
+
+/* common css */
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.mgl_10 {
+    margin-left:10px!important;
+}
+.mgr_10 {
+    margin-right:10px!important;
+}
+.mgt_10 {
+    mgargin-top: 10px!important;
+}
+.mgb_10 {
+    mgargin-bottom: 10px!important;
+}
+/*精灵图里的公用样式*/
+[class^="icon_"], [class*=" icon_"] {
+    background: url(../images/sprites.png) no-repeat;
+    background-size: 200px 200px;  /*一般都是压缩图片的2倍*/
+}
+
